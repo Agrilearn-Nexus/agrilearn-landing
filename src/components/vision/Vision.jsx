@@ -3,7 +3,11 @@ import { LuQuote } from "react-icons/lu";
 import visionBG from "../../assets/vision-background.jpg";
 const Vision = () => {
   return (
-    <div className="bg-center" style={{ backgroundImage: `url(${visionBG})` }}>
+    <div
+      id="vision"
+      className="bg-center"
+      style={{ backgroundImage: `url(${visionBG})` }}
+    >
       <div className="w-full flex flex-col gap-8 items-center bg-black/70 py-16 ">
         <h3 className="text-[#E0B732] text-lg">OUR VISION</h3>
         <h3 className="text-[#E0B732] text-6xl">

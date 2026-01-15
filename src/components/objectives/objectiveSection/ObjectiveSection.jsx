@@ -48,7 +48,7 @@ const ObjectiveSection = () => {
     },
   ];
   return (
-    <div className="bg-[#ECF4EE] mt-10">
+    <div id="objective" className="bg-[#ECF4EE] mt-10">
       <div className="flex flex-col items-center py-16 w-11/12 mx-auto gap-6">
         <h3 className="text-md text-[#2E6041]">OUR PURPOSE</h3>
         <h1 className="font-serif text-4xl font-semibold">

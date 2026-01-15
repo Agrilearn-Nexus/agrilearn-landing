@@ -48,7 +48,10 @@ const ServicesSection = () => {
   ];
   return (
     <>
-      <div className="flex flex-col items-center py-16 w-11/12 mx-auto gap-6">
+      <div
+        id="services"
+        className="flex flex-col items-center py-16 w-11/12 mx-auto gap-6"
+      >
         <h3 className="text-md text-[#2E6041]">WHAT WE OFFER</h3>
         <h1 className="font-serif text-4xl font-semibold">
           Services – What We Do

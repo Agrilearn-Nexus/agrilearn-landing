@@ -9,7 +9,7 @@ import { CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="flex px-16 py-18 border-b border-gray-500 justify-between bg-[#16261E] text-[#B7B8AD]">
+    <div id="contact" className="flex px-16 py-18 border-b border-gray-500 justify-between bg-[#16261E] text-[#B7B8AD]">
       <div className="w-1/4 flex flex-col gap-4">
         <h1 className="text-xl font-serif text-[#FBFBF8]">AgriLearn Nexus</h1>
         <p className="text-lg max-w-10/12">
