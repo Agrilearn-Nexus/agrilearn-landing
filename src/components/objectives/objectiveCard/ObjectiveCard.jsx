@@ -2,19 +2,17 @@ import React from "react";
 
 const ObjectiveCard = ({ value }) => {
     return (
-        <div className="w-full flex flex-col gap-4 md:gap-5 p-6 md:p-8 items-center rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2 cursor-default border border-transparent hover:border-gray-100">
+        <div className="group w-full flex flex-col items-center text-center p-8 bg-white/50 backdrop-blur-sm rounded-2xl border border-white/60 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2 hover:border-[#E8BA30]/30">
 
-            <div className="bg-[#396F4D] w-fit rounded-full text-white p-4 md:p-5 shadow-lg mb-2">
-                <div className="scale-75 md:scale-100">
-                    {value.icon}
-                </div>
+            <div className="mb-6 p-4 rounded-full bg-[#396F4D] text-white shadow-lg group-hover:scale-110 group-hover:bg-[#E8BA30] group-hover:text-black transition-all duration-300">
+                {value.icon}
             </div>
 
-            <h1 className="text-xl md:text-2xl font-serif font-bold text-gray-900 text-center">
+            <h1 className="text-xl md:text-2xl font-serif font-bold text-[#16261E] mb-3 group-hover:text-[#2E6041] transition-colors">
                 {value.title}
             </h1>
 
-            <p className="w-full text-sm md:text-base text-center text-gray-600 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                 {value.description}
             </p>
         </div>

@@ -4,45 +4,47 @@ import visionBG from "../../assets/vision-background.jpg";
 
 const Vision = () => {
   return (
-      <div
+      <section
           id="vision"
-          className="bg-center bg-cover bg-no-repeat bg-fixed"
+          className="relative bg-center bg-cover bg-no-repeat bg-fixed py-20 md:py-32"
           style={{ backgroundImage: `url(${visionBG})` }}
       >
-        <div className="w-full flex flex-col gap-6 md:gap-8 items-center bg-black/75 py-16 md:py-24 px-4">
+        <div className="absolute inset-0 bg-[#16261E]/80 mix-blend-multiply"></div>
 
-          <h3 className="text-[#E0B732] text-sm md:text-lg font-bold tracking-widest uppercase">
+        <div className="relative z-10 w-11/12 max-w-5xl mx-auto flex flex-col gap-8 items-center text-center">
+
+          <h3 className="text-[#E8BA30] text-sm md:text-base font-bold tracking-[0.3em] uppercase animate-fade-in-up">
             Our Vision
           </h3>
 
-          <div className="text-[#E0B732]">
-            <LuQuote className="text-4xl md:text-6xl" />
+          <div className="text-[#E8BA30] animate-fade-in-up delay-100">
+            <LuQuote className="text-5xl md:text-7xl opacity-80" />
           </div>
 
-          <p className="text-2xl md:text-4xl lg:text-5xl text-white font-serif w-11/12 md:w-3/4 lg:w-2/3 text-center font-medium leading-tight md:leading-snug">
+          <p className="text-2xl md:text-4xl lg:text-5xl text-white font-serif font-medium leading-tight md:leading-snug animate-fade-in-up delay-200 drop-shadow-lg">
             To become a leading platform transforming agriculture through
             education, research, and innovation while empowering communities for a{" "}
-            <span className="text-[#E0B732]">sustainable future</span>.
+            <span className="text-[#E8BA30] italic">sustainable future</span>.
           </p>
 
-          <div className="flex items-center gap-3 mt-4 md:mt-6">
-            <div className="w-16 md:w-24 h-px bg-gray-400/50"></div>
-            <div className="w-2 h-2 md:w-3.5 md:h-3.5 rounded-full bg-[#E0B732] shadow-[0_0_10px_#E0B732]"></div>
-            <div className="w-16 md:w-24 h-px bg-gray-400/50"></div>
+          <div className="flex items-center gap-4 mt-8 animate-fade-in-up delay-300">
+            <div className="w-16 md:w-32 h-[1px] bg-gradient-to-r from-transparent to-[#E8BA30]"></div>
+            <div className="w-3 h-3 rounded-full bg-[#E8BA30] shadow-[0_0_15px_#E8BA30]"></div>
+            <div className="w-16 md:w-32 h-[1px] bg-gradient-to-l from-transparent to-[#E8BA30]"></div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 md:gap-16 lg:gap-32 mt-8 md:mt-10">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-10 animate-fade-in-up delay-300">
             {["Innovation", "Sustainability", "Empowerment"].map((word, index) => (
-                <p
+                <span
                     key={index}
-                    className="font-serif text-base md:text-xl text-white/90 tracking-wide uppercase border-b-2 border-transparent hover:border-[#E0B732] transition-all cursor-default"
+                    className="text-white/80 font-serif text-lg md:text-xl tracking-wider uppercase border-b-2 border-transparent hover:text-[#E8BA30] hover:border-[#E8BA30] transition-all duration-300 cursor-default"
                 >
-                  {word}
-                </p>
+              {word}
+            </span>
             ))}
           </div>
         </div>
-      </div>
+      </section>
   );
 };
 
