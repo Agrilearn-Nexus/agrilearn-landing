@@ -5,6 +5,8 @@ import heroBackground from "./assets/hero-agriculture.jpg";
 import ServicesSection from "./components/servicesSection/ServicesSection";
 import ObjectiveSection from "./components/objectives/objectiveSection/ObjectiveSection";
 import Vision from "./components/vision/Vision";
+import Footer from "./components/footer/Footer";
+import Copyright from "./components/copyright/Copyright";
 const App = () => {
   return (
     <div className="bg-green-400 w-full h-screen">
@@ -22,6 +24,8 @@ const App = () => {
       <ServicesSection />
       <ObjectiveSection />
       <Vision />
+      <Footer />
+      <Copyright />
     </div>
   );
 };
