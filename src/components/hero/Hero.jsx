@@ -33,7 +33,7 @@ const Hero = () => {
                 </button>
 
                 <button
-                    className="group text-lg font-semibold py-3 px-8QK border border-white/40 bg-white/5 backdrop-blur-sm rounded-xl flex items-center justify-center gap-2 hover:bg-white hover:text-black transition-all duration-300 hover:scale-105">
+                    className="group text-lg font-semibold py-3 px-8 border border-white/40 bg-white/5 backdrop-blur-sm rounded-xl flex items-center justify-center gap-2 hover:bg-white hover:text-black transition-all duration-300 hover:scale-105">
                     <CiPlay1 className="group-hover:scale-110 transition-transform duration-300"/>
                     Watch Our Story
                 </button>
