@@ -13,9 +13,12 @@
 
 ## 📖 About Us
 
-**AgriLearn Nexus** is a premier platform dedicated to bridging the gap between scientific agricultural research and practical farming applications. We empower the agricultural community—farmers, researchers, and students—by providing specialized training, facilitating research collaborations, and organizing high-impact conferences.
+**AgriLearn Nexus** is a premier platform dedicated to bridging the gap between scientific agricultural research and
+practical farming applications. We empower the agricultural community—farmers, researchers, and students—by providing
+specialized training, facilitating research collaborations, and organizing high-impact conferences.
 
-Our mission is to build a **sustainable future** for farming communities through knowledge dissemination and technological adoption.
+Our mission is to build a **sustainable future** for farming communities through knowledge dissemination and
+technological adoption.
 
 ---
 
@@ -53,26 +56,27 @@ Follow these steps to set up the project locally on your machine.
 
 ### Installation
 
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/your-username/agrilearn-nexus.git](https://github.com/your-username/agrilearn-nexus.git)
-    cd agrilearn-nexus
-    ```
+1. **Clone the repository**
 
-2.  **Install dependencies**
-    ```bash
-    npm install
-    ```
+```bash
+git clone https://github.com/Agrilearn-Nexus/agrilearn-landing
+cd agrilearn-landing
+```
 
-3.  **Run the development server**
-    ```bash
-    npm run dev
-    ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-4.  **Build for production**
-    ```bash
-    npm run build
-    ```
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
 ---
 
