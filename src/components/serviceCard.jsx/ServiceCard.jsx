@@ -3,7 +3,7 @@ import { IoMdSchool } from "react-icons/io";
 const ServiceCard = ({ value }) => {
   return (
     <div className="w-[31%] overflow-hidden flex flex-col gap-5 p-8 bg-[#F9F9F5] rounded-xl relative">
-        <div className="w-[10vw] absolute -right-17.5 -top-17.5 h-[10vw] bg-[#F3F3EC] rounded-full"></div>
+      <div className="w-[10vw] absolute -right-17.5 -top-17.5 h-[10vw] bg-[#F3F3EC] rounded-full"></div>
       <div className="bg-[#396F4D] w-fit rounded-xl text-white p-4">
         {value.icon}
       </div>
