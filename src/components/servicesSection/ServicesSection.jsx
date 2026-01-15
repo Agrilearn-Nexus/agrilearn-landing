@@ -50,7 +50,7 @@ const ServicesSection = () => {
 
     return (
         <section className="bg-white py-16 md:py-24 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#2E6041] via-[#E8BA30] to-[#2E6041]"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2E6041] via-[#E8BA30] to-[#2E6041]"></div>
 
             <div className="flex flex-col items-center w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 mb-16">
                 <h3 className="text-sm md:text-base font-bold tracking-[0.2em] text-[#E8BA30] uppercase">
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                 <h1 className="font-serif text-3xl md:text-5xl font-semibold text-center text-[#16261E]">
                     Services – What We Do
                 </h1>
-                <div className="w-24 h-1 bg-[#2E6041] rounded-full my-2"></div>
+                <div className="w-24 h-1.5 bg-[#2E6041] rounded-full my-2"></div>
                 <p className="text-lg md:text-xl w-full md:w-2/3 text-center text-gray-600 leading-relaxed">
                     Comprehensive services designed to transform agriculture through
                     education, research, and community engagement.
