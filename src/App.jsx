@@ -3,6 +3,7 @@ import Navbar from "./components/nav/Navbar";
 import Hero from "./components/hero/Hero";
 import heroBackground from "./assets/hero-agriculture.jpg";
 import ServicesSection from "./components/servicesSection/ServicesSection";
+import ObjectiveSection from "./components/objectives/objectiveSection/ObjectiveSection";
 const App = () => {
   return (
     <div className="bg-green-400 w-full h-screen">
@@ -18,6 +19,7 @@ const App = () => {
         </div>
       </div>
       <ServicesSection />
+      <ObjectiveSection />
     </div>
   );
 };
