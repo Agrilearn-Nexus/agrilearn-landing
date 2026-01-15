@@ -7,10 +7,12 @@ import ObjectiveSection from "./components/objectives/objectiveSection/Objective
 import Vision from "./components/vision/Vision";
 import Footer from "./components/footer/Footer";
 import Copyright from "./components/copyright/Copyright";
+import FloatingWhatsApp from "./components/floatingWhatsApp/FloatingWhatsApp.jsx";
 
 const App = () => {
     return (
         <div className="w-full min-h-screen flex flex-col font-sans">
+            <FloatingWhatsApp />
 
             <div className="relative w-full min-h-screen flex flex-col">
 
