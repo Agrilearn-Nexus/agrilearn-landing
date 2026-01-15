@@ -1,158 +1,120 @@
 import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiLinkedin } from "react-icons/si";
-import { FaInstagram } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
-import { IoCallOutline } from "react-icons/io5";
-import { CiMail } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import {FaFacebookSquare, FaInstagram} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
+import {SiLinkedin} from "react-icons/si";
+import {IoCallOutline, IoLocationOutline} from "react-icons/io5";
+import {CiMail} from "react-icons/ci";
 import {ImYoutube} from "react-icons/im";
+import {Link} from "react-router-dom";
+import logo from "../../assets/companyLogo.png";
+
 const Footer = () => {
-  return (
-    <div id="contact" className="flex px-16 py-18 border-b border-gray-500 justify-between bg-[#16261E] text-[#B7B8AD]">
-      <div className="w-1/4 flex flex-col gap-4">
-        <h1 className="text-xl font-serif text-[#FBFBF8]">AgriLearn Nexus</h1>
-        <p className="text-lg max-w-10/12">
-          Empowering agriculture through education, research, and innovation.
-          Building a sustainable future for farming communities.
-        </p>
-        <div className="flex gap-4">
-          <a
-            href="https://www.instagram.com/agrilearn.nexus?igsh=emNkbnl1Z244Y2Yx&utm_source=ig_contact_invite"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <FaFacebookSquare
-              size={25}
-              className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"
-            />
-          </a>
+    return (
+        <footer id="contact" className="bg-[#16261E] text-[#B7B8AD] border-t border-gray-700">
+            <div
+                className="px-6 py-12 md:px-12 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
-          <a
-            href="https://www.instagram.com/agrilearn.nexus?igsh=emNkbnl1Z244Y2Yx&utm_source=ig_contact_invite"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <FaXTwitter
-              size={25}
-              className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"
-            />
-          </a>
+                <div className="flex flex-col gap-5">
+                    <div className="flex items-center gap-3">
+                        <img
+                            src={logo}
+                            alt="AgriLearn Nexus Logo"
+                            className="w-12 h-12 rounded-full border border-gray-600"
+                        />
+                        <h1 className="text-2xl font-serif text-[#FBFBF8]">AgriLearn Nexus</h1>
+                    </div>
 
-          <a
-            href="https://www.instagram.com/agrilearn.nexus?igsh=emNkbnl1Z244Y2Yx&utm_source=ig_contact_invite"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <SiLinkedin
-              size={25}
-              className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"
-            />
-          </a>
+                    <p className="text-base md:text-lg leading-relaxed text-gray-400">
+                        Empowering agriculture through education, research, and innovation.
+                        Building a sustainable future for farming communities.
+                    </p>
 
-          <a
-            href="https://www.instagram.com/agrilearn.nexus?igsh=emNkbnl1Z244Y2Yx&utm_source=ig_contact_invite"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <FaInstagram
-              size={25}
-              className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"
-            />
-          </a>
-          <a
-            href={"https://www.youtube.com/@agrilearnnexus"}
-            className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <ImYoutube size={25} className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"/>
-          </a>
-        </div>
-      </div>
-      <div className="w-1/4 flex flex-col gap-2">
-        <h1 className="text-xl font-serif text-[#FBFBF8]">Quick Links</h1>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Home</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">About US</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Events</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Services</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Magazine</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Contact</h2>
-        </Link>
-      </div>
-      <div className="w-1/4 flex flex-col gap-2">
-        <h1 className="text-xl font-serif text-[#FBFBF8]">Our Services</h1>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Farmer Training</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Workshops</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Research</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Consultancy</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Publications</h2>
-        </Link>
-        <Link to={"/"} className="w-fit">
-          <h2 className="text-lg hover:text-[#E0B732]">Digital Learning</h2>
-        </Link>
-      </div>
-      <div className="w-1/4 flex flex-col gap-2">
-        <h1 className="text-xl font-serif text-[#FBFBF8]">Contact Us</h1>
-        <div className="flex gap-2">
-          <IoLocationOutline size={64} color={"#E0B732"} />
-          <h2>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Tilak+Nagar+Road,+Near+Manoupchar+Kendra,+Begusarai,+Bihar,+India"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open Agrilearn Nexus location in Google Maps"
-            >
-              Tilak Nagar Road, Near Manoupchar Kendra, Tilak Nagar, Vishnupur,
-              Sarvoday Nagar, Begusarai, 851101, India
-            </a>
-          </h2>
-        </div>
-        <div className="flex gap-2 items-center">
-          <IoCallOutline size={22} color={"#E0B732"} />
-          <a href="tel:+917488468326" aria-label="Call us at +91 7488468326">
-            Call Us: +91 7488468326
-          </a>
-        </div>
+                    <div className="flex gap-4 mt-2">
+                        {[
+                            {icon: <FaFacebookSquare size={24}/>, url: "https://instagram.com"},
+                            {icon: <FaXTwitter size={24}/>, url: "https://twitter.com"},
+                            {icon: <SiLinkedin size={24}/>, url: "https://linkedin.com"},
+                            {icon: <FaInstagram size={24}/>, url: "https://instagram.com"},
+                            {icon: <ImYoutube size={24}/>, url: "https://youtube.com"},
+                        ].map((social, index) => (
+                            <a
+                                key={index}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#FBFBF8] hover:text-[#E0B732] hover:scale-110 transition-all duration-300"
+                            >
+                                {social.icon}
+                            </a>
+                        ))}
+                    </div>
+                </div>
 
-        <div className="flex gap-2 items-center">
-          <CiMail size={24} color={"#E0B732"} />
-          <a
-            href="mailto:support@agrilearnnexus.com"
-            aria-label="Email support at Agrilearn Nexus"
-          >
-            support@agrilearnnexus.com
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+                <div className="flex flex-col gap-4">
+                    <h1 className="text-xl font-serif text-[#FBFBF8] border-b border-gray-600 w-fit pb-1">
+                        Quick Links
+                    </h1>
+                    <div className="flex flex-col gap-2">
+                        {["Home", "About Us", "Events", "Services", "Magazine", "Contact"].map((link) => (
+                            <Link key={link} to={"/"}
+                                  className="w-fit hover:text-[#E0B732] hover:translate-x-1 transition-transform duration-300">
+                                {link}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-4">
+                    <h1 className="text-xl font-serif text-[#FBFBF8] border-b border-gray-600 w-fit pb-1">
+                        Our Services
+                    </h1>
+                    <div className="flex flex-col gap-2">
+                        {["Farmer Training", "Workshops", "Research", "Consultancy", "Publications", "Digital Learning"].map((item) => (
+                            <Link key={item} to={"/"}
+                                  className="w-fit hover:text-[#E0B732] hover:translate-x-1 transition-transform duration-300">
+                                {item}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-4">
+                    <h1 className="text-xl font-serif text-[#FBFBF8] border-b border-gray-600 w-fit pb-1">
+                        Contact Us
+                    </h1>
+
+                    <div className="flex gap-3 items-start">
+                        <IoLocationOutline size={28} className="text-[#E0B732] flex-shrink-0 mt-1"/>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Tilak+Nagar+Road,+Near+Manoupchar+Kendra,+Begusarai,+Bihar,+India"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-[#E0B732] transition-colors leading-snug"
+                        >
+                            Tilak Nagar Road, Near Manoupchar Kendra, Begusarai, 851101, India
+                        </a>
+                    </div>
+
+                    <div className="flex gap-3 items-center">
+                        <IoCallOutline size={22} className="text-[#E0B732] flex-shrink-0"/>
+                        <a href="tel:+917488468326" className="hover:text-[#E0B732] transition-colors">
+                            +91 7488468326
+                        </a>
+                    </div>
+
+                    <div className="flex gap-3 items-center">
+                        <CiMail size={24} className="text-[#E0B732] flex-shrink-0"/>
+                        <a href="mailto:support@agrilearnnexus.com"
+                           className="hover:text-[#E0B732] transition-colors break-all">
+                            support@agrilearnnexus.com
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+    );
 };
 
 export default Footer;

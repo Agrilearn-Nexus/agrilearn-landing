@@ -7,27 +7,38 @@ import ObjectiveSection from "./components/objectives/objectiveSection/Objective
 import Vision from "./components/vision/Vision";
 import Footer from "./components/footer/Footer";
 import Copyright from "./components/copyright/Copyright";
+
 const App = () => {
-  return (
-    <div className="bg-green-400 w-full h-screen">
-      <div
-        className="min-h-screen bg-cover bg-center "
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-        }}
-      >
-        <div className="min-h-screen bg-black/30">
-          <Navbar />
-          <Hero />
+    return (
+        <div className="w-full min-h-screen flex flex-col">
+
+            <div
+                className="relative w-full h-screen bg-cover bg-center"
+                style={{
+                    backgroundImage: `url(${heroBackground})`,
+                }}
+            >
+                <div className="absolute inset-0 bg-black/40 flex flex-col">
+                    <Navbar/>
+
+                    <div className="flex-grow flex items-center justify-center">
+                        <Hero/>
+                    </div>
+                </div>
+            </div>
+
+            <main className="w-full">
+                <ServicesSection/>
+                <ObjectiveSection/>
+                <Vision/>
+            </main>
+
+            <footer className="w-full">
+                <Footer/>
+                <Copyright/>
+            </footer>
         </div>
-      </div>
-      <ServicesSection />
-      <ObjectiveSection />
-      <Vision />
-      <Footer />
-      <Copyright />
-    </div>
-  );
+    );
 };
 
 export default App;
