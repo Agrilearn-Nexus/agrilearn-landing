@@ -49,7 +49,7 @@ const ServicesSection = () => {
     ];
 
     return (
-        <section className="bg-white py-16 md:py-24 relative overflow-hidden">
+        <section id={"services"} className="bg-white py-16 md:py-24 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2E6041] via-[#E8BA30] to-[#2E6041]"></div>
 
             <div className="flex flex-col items-center w-11/12 max-w-7xl mx-auto gap-4 md:gap-6 mb-16">
