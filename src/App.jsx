@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import heroBackground from "./assets/hero-agriculture.jpg";
 import ServicesSection from "./components/servicesSection/ServicesSection";
 import ObjectiveSection from "./components/objectives/objectiveSection/ObjectiveSection";
+import Vision from "./components/vision/Vision";
 const App = () => {
   return (
     <div className="bg-green-400 w-full h-screen">
@@ -20,6 +21,7 @@ const App = () => {
       </div>
       <ServicesSection />
       <ObjectiveSection />
+      <Vision />
     </div>
   );
 };
