@@ -9,10 +9,10 @@ const ReferenceDetails = () => {
 
   return (
     <div className="w-full flex justify-center p-8">
-      <div className="w-full bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border-t-[8px] border-[#3F7A5A] overflow-hidden">
+      <div className="w-full bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border-t-8 border-[#3F7A5A] overflow-hidden">
         <div className="p-6 md:p-10">
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#3F7A5A] text-white flex items-center justify-center font-bold text-xl font-serif">
+            <div className="shrink-0 w-10 h-10 rounded-full bg-[#3F7A5A] text-white flex items-center justify-center font-bold text-xl font-serif">
               4
             </div>
             <h2 className="text-3xl font-serif font-bold text-[#1a1a1a]">
@@ -24,7 +24,8 @@ const ReferenceDetails = () => {
           <div className="space-y-6">
             <div>
               <label className="text-sm font-bold text-gray-800 mb-3 block">
-                How did you hear about this conference?{" "}<span className="text-red-500">*</span>
+                How did you hear about this conference?{" "}
+                <span className="text-red-500">*</span>
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
@@ -41,7 +42,9 @@ const ReferenceDetails = () => {
                     <input
                       type="radio"
                       value={option}
-                      {...register("referenceSource",{required:"You must select a referrer."})}
+                      {...register("referenceSource", {
+                        required: "You must select a referrer.",
+                      })}
                       className="w-4 h-4 accent-[#3F7A5A] cursor-pointer"
                     />
                     <span className="text-gray-700 group-hover:text-[#3F7A5A] transition-colors">

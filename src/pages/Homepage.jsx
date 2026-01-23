@@ -27,7 +27,7 @@ const Homepage = () => {
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
 
-          <div className="flex-grow flex items-center justify-center py-12 md:py-0">
+          <div className="grow flex items-center justify-center py-12 md:py-0">
             <Hero />
           </div>
         </div>

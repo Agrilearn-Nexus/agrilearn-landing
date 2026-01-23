@@ -5,7 +5,7 @@ import {
   FiUploadCloud,
   FiCheckCircle,
   FiFileText,
-} from "react-icons/fi"; // Added new icons
+} from "react-icons/fi";
 import { BsInfoCircle } from "react-icons/bs";
 
 const PaymentDetails = () => {
@@ -15,8 +15,6 @@ const PaymentDetails = () => {
     formState: { errors },
   } = useFormContext();
 
-  // WATCH THE FILE INPUT
-  // This variable will update in real-time whenever the user selects a file
   const paymentReceipt = watch("paymentReceipt");
 
   const feeStructure = [
@@ -52,11 +50,10 @@ const PaymentDetails = () => {
 
   return (
     <div className="w-full flex justify-center p-8">
-      <div className=" w-full bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border-t-[8px] border-[#3F7A5A] overflow-hidden">
+      <div className=" w-full bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border-t-8 border-[#3F7A5A] overflow-hidden">
         <div className="p-6 md:p-10">
-          {/* Header */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#3F7A5A] text-white flex items-center justify-center font-bold text-xl font-serif">
+            <div className="shrink-0 w-10 h-10 rounded-full bg-[#3F7A5A] text-white flex items-center justify-center font-bold text-xl font-serif">
               2
             </div>
             <h2 className="text-3xl font-serif font-bold text-[#1a1a1a]">
@@ -66,7 +63,6 @@ const PaymentDetails = () => {
 
           <div className="w-full h-px bg-gray-200 mb-8"></div>
 
-          {/* Fee Structure Table */}
           <h3 className="text-lg font-bold text-gray-800 mb-4 font-serif">
             Registration Fee Structure
           </h3>
@@ -106,13 +102,9 @@ const PaymentDetails = () => {
             </table>
           </div>
 
-          {/* Certificate Selection */}
           <div className="bg-blue-50 border border-blue-100 rounded-lg p-6 mb-8">
             <div className="flex gap-3 items-start mb-4">
-              <BsInfoCircle
-                className="text-blue-600 mt-1 flex-shrink-0"
-                size={20}
-              />
+              <BsInfoCircle className="text-blue-600 mt-1 shrink-0" size={20} />
               <div>
                 <h4 className="font-bold text-blue-900">
                   Certificate Type & Fee Details{" "}
@@ -148,16 +140,13 @@ const PaymentDetails = () => {
             )}
           </div>
 
-          {/* UPI Payment Section */}
           <div className="bg-blue-50 border border-blue-100 rounded-lg p-6 mb-8">
             <div className="flex gap-3 items-start mb-4">
-              <BsInfoCircle
-                className="text-blue-600 mt-1 flex-shrink-0"
-                size={20}
-              />
+              <BsInfoCircle className="text-blue-600 mt-1 shrink-0" size={20} />
               <div>
-                <h4 className="font-bold text-blue-900">Payment via UPI{" "}
-                  <span className="text-red-500">*</span></h4>
+                <h4 className="font-bold text-blue-900">
+                  Payment via UPI <span className="text-red-500">*</span>
+                </h4>
                 <p className="text-sm text-blue-800 mt-1">
                   Pay to the UPI ID below and upload the receipt.
                 </p>
@@ -178,7 +167,6 @@ const PaymentDetails = () => {
             </div>
           </div>
 
-          {/* Payment Input Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex flex-col">
@@ -217,13 +205,12 @@ const PaymentDetails = () => {
               </div>
             </div>
 
-            {/* UPLOAD SECTION - MODIFIED */}
             <div className="flex flex-col">
               <label className="text-sm font-bold text-gray-800 mb-2">
                 Upload Payment Receipt <span className="text-red-500">*</span>
               </label>
               <div
-                className={`relative flex-grow border-2 border-dashed rounded-lg flex flex-col items-center justify-center p-6 text-center transition-colors cursor-pointer group min-h-[160px] ${
+                className={`relative grow border-2 border-dashed rounded-lg flex flex-col items-center justify-center p-6 text-center transition-colors cursor-pointer group min-h-40 ${
                   paymentReceipt && paymentReceipt.length > 0
                     ? "bg-green-50 border-[#3F7A5A]"
                     : "bg-gray-50 border-gray-300 hover:bg-green-50 hover:border-[#3F7A5A]"
@@ -238,7 +225,6 @@ const PaymentDetails = () => {
                   className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
                 />
 
-                {/* CONDITIONAL RENDERING BASED ON FILE SELECTION */}
                 {paymentReceipt && paymentReceipt.length > 0 ? (
                   <div className="flex flex-col items-center animate-fadeIn">
                     <div className="w-12 h-12 bg-white rounded-full shadow-sm flex items-center justify-center mb-3">

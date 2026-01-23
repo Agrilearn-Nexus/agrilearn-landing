@@ -23,7 +23,7 @@ const FormFooter = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="flex-[2] py-4 px-6 rounded-lg bg-[#3F7A5A] text-white font-bold text-lg hover:bg-[#2E5E42] shadow-lg shadow-green-900/20 transition-all transform active:scale-[0.99] flex items-center justify-center gap-2 disabled:bg-gray-400"
+            className="flex-2 py-4 px-6 rounded-lg bg-[#3F7A5A] text-white font-bold text-lg hover:bg-[#2E5E42] shadow-lg shadow-green-900/20 transition-all transform active:scale-[0.99] flex items-center justify-center gap-2 disabled:bg-gray-400"
           >
             {isSubmitting ? (
               "Submitting..."
