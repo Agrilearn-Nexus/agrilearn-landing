@@ -17,6 +17,10 @@ const PaymentDetails = () => {
 
   const paymentReceipt = watch("paymentReceipt");
 
+ 
+  const [selectedUpi, setSelectedUpi] = useState("7485850688@pthdfc");
+  const [copied, setCopied] = useState(false);
+
   const feeStructure = [
     { category: "MSc", softCopy: "₹149", hardCopy: "₹199" },
     { category: "PhD Research Scholar", softCopy: "₹149", hardCopy: "₹199" },
@@ -40,10 +44,8 @@ const PaymentDetails = () => {
     { category: "Scientist", type: "Hard Copy", price: 249 },
   ];
 
-  const [copied, setCopied] = useState(false);
-
   const handleCopy = () => {
-    navigator.clipboard.writeText("7814809913@psbbpay");
+    navigator.clipboard.writeText(selectedUpi); 
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -154,11 +156,17 @@ const PaymentDetails = () => {
             </div>
 
             <div className="flex items-center gap-4 bg-white p-3 rounded w-full max-w-5xl justify-between mx-auto sm:mx-0">
-              <select className="border rounded-md border-blue-200 p-4 w-[75%]">
-                <option>7485850688@pthdfc</option>
-                <option>satyamsinghbgs90-1@okicici</option>
+              
+              <select 
+                className="border rounded-md border-blue-200 p-4 w-[75%]"
+                value={selectedUpi}
+                onChange={(e) => setSelectedUpi(e.target.value)}
+              >
+                <option value="7485850688@pthdfc">7485850688@pthdfc</option>
+                <option value="satyamsinghbgs90-1@okicici">satyamsinghbgs90-1@okicici</option>
               </select>
               <button
+                type="button" 
                 onClick={handleCopy}
                 className="bg-[#3F7A5A] rounded-full px-4 py-2 text-white font-sans text-sm whitespace-nowrap"
               >
